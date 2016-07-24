@@ -1,0 +1,19 @@
+language: python
+python:
+  - "3.5"
+env:
+  - DJANGO_VERSION=1.9
+before_install: 
+  - set -ev
+  - sudo apt-get install binutils 
+  - sudo apt-get install libproj-dev 
+  - sudo apt-get install gdal-bin
+  # Docs say these are optional, but nevertheless..
+  - sudo apt-get install libgeoip1       #for GeoIP support
+  - sudo apt-get install python-gdal     #for GDAL’s own Python bindings – includes interfaces for raster manipulation
+  # spatialite-bin              #this didnt work for me, so I installed..
+  - sudo apt-get install libsqlite3-mod-spatialite   #this one
+  - cd geodjangoSpatialite
+install: 
+  - pip install Django==$DJANGO_VERSION
+script: python manage.py test testsite
