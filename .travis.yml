@@ -10,7 +10,6 @@ before_install:
   - sudo apt-get install gdal-bin
   - sudo apt-get install libgeoip1       #for GeoIP support
   - sudo apt-get install python-gdal     #for GDAL’s own Python bindings – includes interfaces for raster manipulation  
-  - sudo apt-get install libgeos-3.5.0  
   - sudo apt-get install spatialite-bin  
   - cd geodjangoSpatialite
 install: 
