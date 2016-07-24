@@ -1,3 +1,6 @@
 from django.test import TestCase
+from .load import run
 
-# Create your tests here.
+class LoadTests(TestCase):
+    def test_loadscript(self):
+        run()
