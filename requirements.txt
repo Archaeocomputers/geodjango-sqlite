@@ -1,0 +1,9 @@
+binutils 
+libproj-dev 
+gdal-bin
+# Docs say these are optional, but nevertheless..
+libgeoip1       #for GeoIP support
+python-gdal     #for GDAL’s own Python bindings – includes interfaces for raster manipulation
+# For SQLite only
+#spatialite-bin             #this didnt work for me, so I installed..
+libsqlite3-mod-spatialite   #this one
