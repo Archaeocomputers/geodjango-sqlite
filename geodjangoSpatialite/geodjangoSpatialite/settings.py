@@ -72,7 +72,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'geodjangoSpatialite.wsgi.application'
 
 # Required for use with SQLite / Sptialite
-SPATIALITE_LIBRARY_PATH = 'mod_spatialite'
+# SPATIALITE_LIBRARY_PATH = 'mod_spatialite'
 
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
