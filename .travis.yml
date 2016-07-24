@@ -1,15 +1,14 @@
 language: python
 python:
-  - "2.7"
-  - "3.4"
   - "3.5"
 env:
   - DJANGO_VERSION=1.9
 before_install: 
   - set -ev
+  - sudo apt-get install libgeos-c1v5    
   - echo "deb http://us.archive.ubuntu.com/ubuntu wily main universe" | sudo tee /etc/apt/sources.list
   - sudo apt-get update
-  - sudo apt-get install libgeos-c1v5  
+  - sudo apt-get autoremove
   - sudo apt-get install libsqlite3-mod-spatialite   #this one  
   - sudo apt-get install binutils 
   - sudo apt-get install libproj-dev 
